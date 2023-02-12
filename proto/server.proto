@@ -5,13 +5,13 @@ option go_package = "github.com/zulcss/edged";
 package edged;
 
 service Edge {
-	rpc Version (VersionRequest) returns (VersionReply) {}
+	rpc Ping (VersionRequest) returns (VersionReply) {}
 }
 
 message VersionRequest {
 	string server = 1;
 }
 
-message VersionRply {
+message VersionReply {
 	string message = 1;
 }

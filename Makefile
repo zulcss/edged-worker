@@ -1,6 +1,6 @@
 .PHONY: server client clean api all
 
-all: clean server client
+all: clean api server client
 
 server:
 	go build -o bin/edged-worker main.go

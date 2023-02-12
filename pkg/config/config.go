@@ -5,10 +5,14 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-type Config struct {
-	server
-}
 
-func ReadConfig(config string) {
-	log.Info("in ReadConfig")
+func ReadConfig(CconfigFile string) {
+	log.Debug("in ReadConfig")
+
+	viper.SetConfigName("config")
+	viper.AddConfigPath("etc/edged")
+	err := viper.ReadInConfig() 
+	if err != nil {
+		log.Fatalf("Failed to read configuration file: %v\n", err)
+	}
 }
