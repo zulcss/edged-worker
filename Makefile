@@ -1,7 +1,9 @@
-.PHONY: server client clean api
+.PHONY: server client clean api all
+
+all: clean server client
 
 server:
-	go build -o bin/edged main.go
+	go build -o bin/edged-worker main.go
 
 client:
 	go build -o bin/edgectl client/main.go
