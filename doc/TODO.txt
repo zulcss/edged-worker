@@ -1,0 +1,90 @@
+== RPC Calls ==
+
+This list will get more sophisticated as time goes on.
+
+* API
+   - API Status
+   - API version
+* Health
+   - CPU usage
+   - Process usage
+   - Mem usage
+* Server
+   - Start
+   - Shutdown
+   - Reboot
+   - Hostname
+   - Mounts
+   - Memory
+   - Reset
+   - Rollback
+   - Upgrade
+   - Info
+* Service
+   - Info
+   - Stop 
+   - Start
+   - Restart
+* Provisioning
+   - Install
+   - Boot
+   - PXEboot setup
+   - IPMI
+* K8s
+   - Start
+   - Stop
+* Software
+   - Install
+   - Remove 
+   - list
+   - upgrade
+* Containers
+    - start
+    - stop
+    - remove
+    - copy
+    - list
+* networks
+    - start
+    - stop
+    - list
+* Images
+    - list
+    - create
+    - remove
+* Disk
+    - mounts
+    - info
+    - attach
+    - dettach
+    - format
+* Drivers
+    - kernel info
+    - modules info
+    - modprobe actions
+* Bios Information
+    - dmidecode 
+* Chasis Information
+* Ceph
+* DNS
+     - Info
+     - Add
+     - Remove
+* NTP
+     - Info
+     - list
+     - add
+     - remove
+* certificates
+      - info
+      - list
+      - add
+      - remove
+* Logs
+	- download
+* cluster
+       - info
+       - add host
+       - remove host
+       - list
+
