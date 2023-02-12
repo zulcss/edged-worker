@@ -1,0 +1,6 @@
+# This is a TOML document
+
+[server]
+host = localhost
+port = 8000
+logdir = logs
